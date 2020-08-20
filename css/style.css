@@ -1,0 +1,143 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+h1 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+}
+
+h2 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1F2041;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+
+.logo {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 48px;
+  height: 48px;
+  float: left;
+}
+
+/* Colors & Type */
+/* Colors style start */
+.colors-types {
+  padding-left: 150px;
+  padding-top: 145px;
+  display: flex;
+}
+
+.colors-types__colors {
+  margin-right: 427px;
+}
+
+.color__item {
+  display: grid;
+  grid-template-columns: 70px 160px;
+  grid-column-gap: 40px;
+  margin-bottom: 20px;
+}
+
+.colorbox {
+  border-radius: 6px;
+  height: 70px;
+  width: 70px;
+}
+
+.color__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #1f2041;
+  font-family: Quicksand;
+  font-size: 19px;
+  line-height: 29px;
+}
+
+p.color__title {
+  font-family: Quicksand;
+  margin: 0;
+  font-weight: bold;
+}
+
+p.color__name_name {
+  font-family: Quicksand;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Colors style end */
+/* types style start */
+.types__item {
+  display: flex;
+}
+
+.types__item_h1 {
+  font-size: 24px;
+  line-height: 29px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.types__item_h2 {
+  font-family: Montserrat;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.types__item_h3 {
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.types__item_body {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+/* types style end */
+
+/*# sourceMappingURL=style.css.map */
