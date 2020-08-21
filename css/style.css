@@ -15,6 +15,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+  margin: 0;
 }
 
 h1 {
@@ -23,7 +24,8 @@ h1 {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  color: #1F2041;
+  color: #1f2041;
+  margin: 0;
 }
 
 h2 {
@@ -32,7 +34,8 @@ h2 {
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
-  color: #1F2041;
+  color: #1f2041;
+  margin: 0;
 }
 
 h3 {
@@ -42,7 +45,8 @@ h3 {
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  color: #1F2041;
+  color: #1f2041;
+  margin: 0;
 }
 
 .logo {
@@ -102,40 +106,33 @@ p.color__name_name {
 
 /* Colors style end */
 /* types style start */
+.colors-types__types {
+  max-width: 403px;
+}
+
 .types__item {
   display: flex;
 }
 
-.types__item_h1 {
-  font-size: 24px;
-  line-height: 29px;
-  text-align: right;
+.types__item_name {
   color: rgba(31, 32, 65, 0.25);
+  text-align: right;
+  margin-right: 30px;
+  width: 37px;
+  margin-top: 0;
+}
+
+.types__item_desc {
+  margin-bottom: 50px;
+}
+
+.types__item_h1 {
+  line-height: 29px;
 }
 
 .types__item_h2 {
   font-family: Montserrat;
-  font-size: 19px;
   line-height: 23px;
-  text-align: right;
-  color: rgba(31, 32, 65, 0.25);
-}
-
-.types__item_h3 {
-  font-family: Montserrat;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: right;
-  text-transform: uppercase;
-  color: rgba(31, 32, 65, 0.25);
-}
-
-.types__item_body {
-  font-family: Montserrat;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: right;
-  color: rgba(31, 32, 65, 0.25);
 }
 
 /* types style end */

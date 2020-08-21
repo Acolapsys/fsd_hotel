@@ -16,37 +16,41 @@ html {
 }
 
 body {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin: 0;
 }
 h1 {
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
-    color: #1F2041;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1f2041;
+  margin: 0;
 }
 h2 {
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
-    color: #1F2041;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1f2041;
+  margin: 0;
 }
 h3 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #1F2041;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+  margin: 0;
 }
 .logo {
   margin-top: 30px;
@@ -59,12 +63,12 @@ h3 {
 /* Colors & Type */
 /* Colors style start */
 .colors-types {
-    padding-left: 150px;
-    padding-top: 145px;
-    display: flex;
+  padding-left: 150px;
+  padding-top: 145px;
+  display: flex;
 }
 .colors-types__colors {
-    margin-right: 427px;
+  margin-right: 427px;
 }
 
 .color__item {
@@ -106,50 +110,33 @@ p.color__name_name {
 /* types style start */
 
 .colors-types__types {
-
+  max-width: 403px;
 
 }
 .types__item {
-    display: flex;
+  display: flex;
+
 }
 
 .types__item_name {
-
+  color: rgba(31, 32, 65, 0.25);
+  text-align: right;
+  margin-right: 30px;
+  width: 37px;
+  margin-top: 0;
+}
+.types__item_desc {
+  margin-bottom: 50px;
 }
 .types__item_h1 {
-
-    font-size: 24px;
-    line-height: 29px;
-    text-align: right;
-    color: rgba(31, 32, 65, 0.25);
+  line-height: 29px;
 }
-
 
 .types__item_h2 {
-    font-family: Montserrat;
-    font-size: 19px;
-    line-height: 23px;
-    text-align: right;
-    color: rgba(31, 32, 65, 0.25);
+  font-family: Montserrat;
+  line-height: 23px;
 }
 
-.types__item_h3 {
-    font-family: Montserrat;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: right;
-    text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.25);
-}
 
-.types__item_body {
-    font-family: Montserrat;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: right;
-    color: rgba(31, 32, 65, 0.25);
-}
-body {
 
-}
 /* types style end */
