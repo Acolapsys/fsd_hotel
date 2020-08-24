@@ -1,0 +1,33 @@
+
+
+img.logo(src="img/logo.svg" alt="")
+.colors-types
+    .colors-types__colors
+        -
+            var colors_list =  [
+                {title: 'Dark Shade 100%', num: '#1F2041', name: '#1F2041'},
+                {title: "Dark Shade 75%", num: 'rgba(31, 32, 65, 0.75)', name: '#1F2041'},
+                {title: "Dark Shade 50%", num: 'rgba(31, 32, 65, 0.5)', name: '#1F2041'},
+                {title: "Dark Shade 25%", num: 'rgba(31, 32, 65, 0.25)', name: '#1F2041'},
+                {title: "Dark Shade 5%", num: 'rgba(31, 32, 65, 0.05)', name: '#1F2041'},
+                {title: "Purple", num: '#BC9CFF', name: '#BC9CFF'},
+                {title: "Green", num: '#6FCF97', name: '#6FCF97'}  ]
+        each element in colors_list                  
+            +color(element.title, element.num, element.name)
+    .colors-types__types
+        table
+            tr
+                td
+                    h1.header__title H1
+                td <h1>This one is the sub-section or widget title
+            tr
+                td
+                    h2.header__title H2
+                td <h2>Next one is the item title inside widgets
+            tr
+                td
+                    h3.header__title H3
+                td <h3>This is a label or CTA text
+            tr
+                td Body
+                td This is the body text which is used for most of the design, like paragraphs, lists, etc.
