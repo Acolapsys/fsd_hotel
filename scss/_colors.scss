@@ -1,21 +1,8 @@
-@mixin ds100 {
-    color: #1F2041;
-}
-@mixin ds75 {
-    color: rgba(31, 32, 65, 0.75);
-}
-@mixin ds50 {
-    color: rgba(31, 32, 65, 0.5);
-}
-@mixin ds25 {
-    color: rgba(31, 32, 65, 0.25);
-}
-@mixin ds5 {
-    color: rgba(31, 32, 65, 0.05);
-}
-@mixin purple {
-    color: #BC9CFF;
-}
-@mixin green {
-    color: #6FCF97;
-}
+$ds100:  #1F2041;
+$ds75: rgba(31, 32, 65, 0.75);
+$ds50: rgba(31, 32, 65, 0.5);
+$ds25: rgba(31, 32, 65, 0.25);
+$ds5: rgba(31, 32, 65, 0.05);
+$purple: #BC9CFF;
+$green: #6FCF97;
+

@@ -364,40 +364,8 @@ textarea {
   padding: 0.2em 0;
 }
 
-@font-face {
-  font-family: 'Quicksand Regular';
-  src: url("../fonts/Quicksand-Regular.eot");
-  src: url("../fonts/Quicksand-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Quicksand-Regular.woff") format("woff"), url("../fonts/Quicksand-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Quicksand Bold';
-  src: url("../fonts/Quicksand-Bold.eot");
-  src: url("../fonts/Quicksand-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Quicksand-Bold.woff") format("woff"), url("../fonts/Quicksand-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat Regular';
-  src: url("../fonts/Montserrat-Regular.eot");
-  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat Bold';
-  src: url("../fonts/Montserrat-ExtraBold.eot");
-  src: url("../fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-ExtraBold.woff") format("woff"), url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
-  font-family: Montserrat Regular;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -407,33 +375,33 @@ body {
 }
 
 h1 {
-  font-family: Quicksand Bold;
+  font-family: Quicksand, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  color: #1f2041;
+  color: #1F2041;
   margin: 0;
 }
 
 h2 {
-  font-family: Quicksand Bold;
+  font-family: Quicksand,sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
-  color: #1f2041;
+  color: #1F2041;
   margin: 0;
 }
 
 h3 {
-  font-family: Montserrat Bold;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  color: #1f2041;
+  color: #1F2041;
   margin: 0;
 }
 
@@ -454,12 +422,11 @@ html {
   margin-left: 30px;
   width: 48px;
   height: 48px;
-  float: left;
 }
 
 .colors-types {
   padding-left: 150px;
-  padding-top: 145px;
+  padding-top: 67px;
   display: flex;
 }
 
@@ -484,20 +451,21 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #1f2041;
-  font-family: Quicksand Regular;
+  color: #1F2041;
   font-size: 19px;
-  line-height: 29px;
+  line-height: 150%;
 }
 
-p.color__title {
-  font-family: Quicksand Bold;
+.color__title {
+  font-family: Quicksand, sans-serif;
   margin: 0;
   font-weight: bold;
+  font-size: 19px;
+  line-height: 150%;
 }
 
-p.color__name_name {
-  font-family: Quicksand Regular;
+.color__name_name {
+  font-family: Quicksand, sans-serif;
   font-weight: normal;
   margin: 0;
 }
@@ -529,5 +497,29 @@ table td:first-child {
 }
 
 /* types style end */
+.text-field-default {
+  margin-top: 85px;
+  margin-left: 63px;
+  width: 320px;
+  height: 67px;
+}
+
+.text-field-default h3 {
+  display: inline;
+}
+
+.text-field-default span {
+  float: right;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.text-field {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  width: 320px;
+  height: 44px;
+}
 
 /*# sourceMappingURL=style.css.map */

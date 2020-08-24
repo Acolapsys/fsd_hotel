@@ -1,0 +1,26 @@
+.text-field-default {
+    margin-top: 85px;
+    margin-left: 63px;
+    width: 320px;
+    height: 67px;
+
+    h3 {
+        display: inline;
+   
+  
+    };
+    span {
+        float: right;
+      
+        text-align: right;
+        text-transform: uppercase;
+    }
+}
+
+.text-field {
+    background: #FFFFFF;
+    border: 1px solid $ds25;
+    border-radius: 4px;
+    width: 320px;
+    height: 44px;
+}
