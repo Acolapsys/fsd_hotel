@@ -1,0 +1,91 @@
+.dropdown {
+    position: relative;
+    // display: inline-block;
+    .dropdown__collapsed {
+        background: #FFFFFF;
+        border: 1px solid $ds25;
+        border-radius: 4px;
+        height: 44px;
+        color: $ds75;
+        padding-left: 15px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+    }
+    .dropdown__collapsed:after {
+        content: 'expand_more';
+        font-family: 'Material Icons';
+        font-size: 24px;
+        line-height: 24px;
+        color: $ds50;
+        float: right;
+        padding-right: 8px;
+    }
+}
+.ellapsed {
+    background: #FFFFFF;
+    border: 1px solid $ds50;
+    border-radius: 0 0 2px 2px;
+    box-shadow: $box-shadow;
+    position: absolute;
+    display: none;
+    z-index: 1;
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #FFFFFF;
+        min-width: 320px;
+        height: 44px;
+        color: $ds25;
+        padding-left: 15px;
+        font-family: Montserrat;
+        font-size: 14px;
+        line-height: 18px;
+        border-radius: 0 0 2px 2px;
+        
+
+        &_label {
+            
+
+        }
+        &_amount {
+            display: flex;
+            font-family: Montserrat;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: $ds100;
+            align-items: center;
+
+            button {
+                margin: 0 7px;
+                width: 30px;
+                height: 30px;
+                border: 1px solid $ds25;
+                color: $ds50;
+                border-radius: 22px;
+                font-family: Montserrat;
+                font-size: 18px;
+                line-height: 22px;
+                color: $ds50;
+                background: #fff;
+                
+            }
+           
+
+
+        }
+    }
+
+}
+
+.show {
+    display: block;
+}

@@ -422,6 +422,7 @@ html {
   margin-left: 30px;
   width: 48px;
   height: 48px;
+  margin-bottom: 62px;
 }
 
 .colors-types {
@@ -497,21 +498,27 @@ table td:first-child {
 }
 
 /* types style end */
-.text-field-default {
-  margin-top: 85px;
-  margin-left: 63px;
-  width: 320px;
-  height: 67px;
+.forms__wrapper {
+  margin-left: 141px;
 }
 
-.text-field-default h3 {
+.container_forms {
+  width: 320px;
+  height: 67px;
+  margin-bottom: 18px;
+}
+
+.container_forms h3 {
   display: inline;
 }
 
-.text-field-default span {
+.container_forms span {
   float: right;
-  text-align: right;
   text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+  font-size: 12px;
+  line-height: 15px;
+  padding-top: 2px;
 }
 
 .text-field {
@@ -520,6 +527,152 @@ table td:first-child {
   border-radius: 4px;
   width: 320px;
   height: 44px;
+  color: rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.text-field:hover, .text-field:focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.text-field-hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown__examples {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+}
+
+.date-dropdown {
+  width: 150px;
+}
+
+.filter-date-dropdown {
+  width: 266px;
+}
+
+.text-field-wrapper {
+  position: relative;
+  width: 267px;
+}
+
+.subscription-text-field {
+  padding-bottom: 100px;
+}
+
+.subscription-text-field .text-field {
+  width: 267px;
+}
+
+.subscription-text-field__submit {
+  font-family: 'Material Icons';
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.5);
+  border: none;
+}
+
+.dropdown-rooms {
+  width: 266px;
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropdown__collapsed {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  height: 44px;
+  color: rgba(31, 32, 65, 0.75);
+  padding-left: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.dropdown .dropdown__collapsed:after {
+  content: 'expand_more';
+  font-family: 'Material Icons';
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.5);
+  float: right;
+  padding-right: 8px;
+}
+
+.ellapsed {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+
+.ellapsed__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF;
+  min-width: 320px;
+  height: 44px;
+  color: rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 0 0 2px 2px;
+}
+
+.ellapsed__item_amount {
+  display: flex;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  align-items: center;
+}
+
+.ellapsed__item_amount button {
+  margin: 0 7px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.5);
+  border-radius: 22px;
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(31, 32, 65, 0.5);
+  background: #fff;
+}
+
+.show {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

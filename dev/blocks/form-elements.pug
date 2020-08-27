@@ -1,7 +1,59 @@
-include form-elements-mixins
+include ../../components/dropdown/dropdown
 
 img.logo(src="img/logo.svg" alt="")
-.text-field-default
-    H3 Text Field
-    span Default
-    input.text-field(type="text")
+
+.forms__wrapper
+    .forms__row
+        .forms__column
+            .container_forms
+                H3 Text Field
+                span Default
+                input.text-field(type="text" value="Email")
+
+            .container_forms
+                H3 Text Field
+                span Hover / Focus
+                input.text-field.text-field-hover(type="text" value="This is pretty awesome")
+            
+            .container_forms
+                H3 Dropdown
+                span Default
+                +dropdown-guests()
+
+
+            .container_forms
+                h3 masked text field
+                span Default
+                input.text-field(type="text" value="ДД.ММ.ГГГГ" pattern="[0-9]{2}\.[0-9]{2}\.[0-9]{4}")
+
+            .date-dropdown__examples 
+                .container_forms.date-dropdown
+                    H3 date Dropdown      
+                    .dropdown ДД.ММ.ГГГГ
+                
+                .container_forms.date-dropdown
+                    H3 date Dropdown      
+                    .dropdown 19.08.2019
+            
+            .container_forms.filter-date-dropdown
+                h3 filter date dropdown
+                .dropdown 19 авг - 23 авг
+
+            .container_forms.subscription-text-field
+                h3 subscription text field
+                form
+                    .text-field-wrapper
+                        input.text-field(type="text" value="Email")
+                        button.subscription-text-field__submit(type="submit") arrow_forward
+        
+    //- .dropdown-default.dropdown-rooms
+    //-     H3 Dropdown
+    //-     span Default
+    //-     .dropdown 2 спальни, 2 кровати...
+    
+    //- .dropdown-default.dropdown-rooms.dropdown-rooms__expanded  
+    //-     H3 Dropdown
+    //-     span expanded
+    //-     .dropdown 2 спальни, 2 кровати...
+
+

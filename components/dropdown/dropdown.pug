@@ -1,0 +1,19 @@
+script
+    include dropdown.js
+mixin dropdown-guests()
+    .dropdown.guests
+        .dropdown__collapsed#collapsed( onclick="dropdownEllapse()")= "Сколько гостей"
+        .dropdown__ellapsed.ellapsed#ellapsed
+            .ellapsed__item.adult
+                +ellapsed-row("Взрослые")      
+            .ellapsed__item.child
+                +ellapsed-row("Дети")      
+            .ellapsed__item.newborn
+                +ellapsed-row("Младенцы")      
+
+mixin ellapsed-row(title)
+    h3.ellapsed__item_label= title
+    .ellapsed__item_amount.amount
+        button.amount__minus -
+        .amount__num 0
+        button.amount__plus +

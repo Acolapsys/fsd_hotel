@@ -4,12 +4,102 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/style.css"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <title>UIKit FSD Project       </title>
   </head>
-  <body><img class="logo" src="img/logo.svg" alt=""/>
-    <div class="text-field-default">
-      <H3>Text Field</H3><span>Default</span>
-      <input class="text-field" type="text"/>
+  <body>
+    <script>/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function dropdownEllapse() {
+    document.getElementById("ellapsed").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropdown__collapsed')) {
+      var dropdowns = document.getElementsByClassName("ellapsed");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+    </script><img class="logo" src="img/logo.svg" alt=""/>
+    <div class="forms__wrapper">
+      <div class="forms__row">
+        <div class="forms__column">
+          <div class="container_forms">
+            <H3>Text Field</H3><span>Default</span>
+            <input class="text-field" type="text" value="Email"/>
+          </div>
+          <div class="container_forms">
+            <H3>Text Field</H3><span>Hover / Focus</span>
+            <input class="text-field text-field-hover" type="text" value="This is pretty awesome"/>
+          </div>
+          <div class="container_forms">
+            <H3>Dropdown</H3><span>Default</span>
+                <div class="dropdown guests">
+                  <div class="dropdown__collapsed" id="collapsed" onclick="dropdownEllapse()">Сколько гостей</div>
+                  <div class="dropdown__ellapsed ellapsed" id="ellapsed">
+                    <div class="ellapsed__item adult">
+                          <h3 class="ellapsed__item_label">Взрослые</h3>
+                          <div class="ellapsed__item_amount amount">
+                            <button class="amount__minus">-</button>
+                            <div class="amount__num">0</div>
+                            <button class="amount__plus">+</button>
+                          </div>
+                    </div>
+                    <div class="ellapsed__item child">
+                          <h3 class="ellapsed__item_label">Дети</h3>
+                          <div class="ellapsed__item_amount amount">
+                            <button class="amount__minus">-</button>
+                            <div class="amount__num">0</div>
+                            <button class="amount__plus">+</button>
+                          </div>
+                    </div>
+                    <div class="ellapsed__item newborn">
+                          <h3 class="ellapsed__item_label">Младенцы</h3>
+                          <div class="ellapsed__item_amount amount">
+                            <button class="amount__minus">-</button>
+                            <div class="amount__num">0</div>
+                            <button class="amount__plus">+</button>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="container_forms">
+            <h3>masked text field</h3><span>Default</span>
+            <input class="text-field" type="text" value="ДД.ММ.ГГГГ" pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}"/>
+          </div>
+          <div class="date-dropdown__examples"> 
+            <div class="container_forms date-dropdown">
+              <H3>date Dropdown      </H3>
+              <div class="dropdown">ДД.ММ.ГГГГ</div>
+            </div>
+            <div class="container_forms date-dropdown">
+              <H3>date Dropdown      </H3>
+              <div class="dropdown">19.08.2019</div>
+            </div>
+          </div>
+          <div class="container_forms filter-date-dropdown">
+            <h3>filter date dropdown</h3>
+            <div class="dropdown">19 авг - 23 авг</div>
+          </div>
+          <div class="container_forms subscription-text-field">
+            <h3>subscription text field</h3>
+            <form>
+              <div class="text-field-wrapper">
+                <input class="text-field" type="text" value="Email"/>
+                <button class="subscription-text-field__submit" type="submit">arrow_forward</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
